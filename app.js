@@ -15,6 +15,9 @@ app.use(mongo({
   port: 27017
 }))
 
+const checkToken=require("./utils/checkToken")
+app.use(checkToken)
+
 // error handler
 onerror(app)
 

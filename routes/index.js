@@ -1,6 +1,5 @@
 const router = require('koa-router')()
 
-const { log } = require('debug/src/browser')
 const jwt=require("jsonwebtoken")
 
 router.get('/', async (ctx, next) => {
@@ -19,6 +18,7 @@ router.post('/login', async (ctx, next) => {
     if(result){
       delete result.userpwd
       const Token=jwt.sign(result,"test",{ expiresIn: "1day" })
+      ctx.body="hello wolrd"
       ctx.body={
         code:200,
         msg:"登入成功",
@@ -30,14 +30,14 @@ router.post('/login', async (ctx, next) => {
     }
     
   } catch (error) {
-    console.log(error)
+    console.log("10000"+error)
   }
 })
 
-router.get('/json', async (ctx, next) => {
-  ctx.body = {
-    title: 'koa2 json'
-  }
+router.get('/test', async (ctx, next) => {
+  await ctx.render('index', {
+    title: 'Hello Koa 2!'
+  })
 })
 
 module.exports = router
