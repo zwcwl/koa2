@@ -1,23 +1,28 @@
-const jwt=require("jsonwebtoken");
+const jwt = require("jsonwebtoken");
 
-const checkToken=async (ctx,next)=>{
+const logger =require("../utils/log4js")
+
+const checkToken = async (ctx, next) => {
     let url = ctx.url.split('?')[0]
-    console.log(url);
+    logger.info(url);
 
-    if(url === "/login" || url === "/"){
+    if (url === "/login" || url === "/") {
         await next()
-    }else{
-        let Token=ctx.request.header.authorization
+    } else {
+        let token = ctx.request.header.authorization
 
-        console.log(Token);
-        try {
-            let aa=jwt.verify(Token,"test")
-            console.log(aa);
-            await next()
-        } catch (error) {
-            console.log(error)
+        if (token) {
+            try {
+                let result = jwt.verify(token, "test")
+                logger.info(result)
+                await next()
+            } catch (error) {
+                logger.error(error)
+            }
+        }else{
+            logger.error("没有找到token")
         }
     }
 }
 
-module.exports=checkToken
+module.exports = checkToken
