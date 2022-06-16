@@ -4,7 +4,6 @@ const views = require('koa-views')
 const json = require('koa-json')
 const onerror = require('koa-onerror')
 const bodyparser = require('koa-bodyparser')
-const koalogger = require('koa-logger')
 const logger =require("./utils/log4js")
 
 const index = require('./routes/index')
@@ -30,7 +29,6 @@ app.use(bodyparser({
   enableTypes:['json', 'form', 'text']
 }))
 app.use(json())
-app.use(koalogger())
 app.use(require('koa-static')(__dirname + '/public'))
 
 app.use(views(__dirname + '/views', {
