@@ -1,3 +1,4 @@
+const { log } = require("debug/src/browser");
 const jwt = require("jsonwebtoken");
 
 const logger = require("../utils/log4js")
@@ -24,7 +25,7 @@ const checkToken = async (ctx, next) => {
             }
         } else {
             logger.error("请登入用户名和密码")
-            response.fail(300, "请登入用户名和密码")
+            ctx.body = response.fail(300, "请登入用户名和密码")
         }
     }
 }
