@@ -10,7 +10,7 @@ const checkToken = async (ctx, next) => {
 
     //判断路径是否为静态路径
     let str=url.includes("/favicon.ico") || url.includes("/stylesheets")
-    if (url === "/" || url === "/login" || str) {
+    if (url === "/" || url === "/user/login" || str) {
         await next()
     } else {
         let token = ctx.request.header.authorization
@@ -22,10 +22,11 @@ const checkToken = async (ctx, next) => {
                 await next()
             } catch (error) {
                 logger.error(error)
+                ctx.fail(30002,"token认证失败或过期")
             }
         } else {
             logger.error("请登入用户名和密码")
-            ctx.body = response.fail(300, "请登入用户名和密码")
+            ctx.body = response.fail(30005, "还未登入请重新登入")
         }
     }
 }
