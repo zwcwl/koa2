@@ -8,18 +8,13 @@ const logger =require("./utils/log4js")
 
 const index = require('./routes/index')
 const users = require('./routes/users')
-const login = require('./routes/login')
 
 //连接mogodb数据库
-const mongo=require("koa-mongo")
-app.use(mongo({
-  host: 'localhost',
-  port: 27017
-}))
+require("./mongoose/db")
 
 //验证token
-const checkToken=require("./utils/checkToken")
-app.use(checkToken)
+// const checkToken=require("./utils/checkToken")
+// app.use(checkToken)
 
 // error handler
 onerror(app)
@@ -46,7 +41,6 @@ app.use(async (ctx, next) => {
 // routes
 app.use(index.routes(), index.allowedMethods())
 app.use(users.routes(), users.allowedMethods())
-app.use(login.routes(), users.allowedMethods())
 
 // error-handling
 app.on('error', (err, ctx) => {

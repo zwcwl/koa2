@@ -1,5 +1,5 @@
 const router = require('koa-router')()
-const response = require("../utils/responseData")
+const util = require("../utils/util")
 
 
 
@@ -10,7 +10,7 @@ router.get('/', async (ctx, next) => {
 })
 
 router.get('/test', async (ctx, next) => {
-  ctx.body = response.succeed(200, "成功", { data: "123" })
+  ctx.body = util.succeed(200, "成功", { data: "123" })
 })
 
 module.exports = router
