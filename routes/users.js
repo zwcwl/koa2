@@ -28,11 +28,12 @@ router.post('/login', async (ctx, next) => {
 //用户查询
 router.get("/", async (ctx) => {
   const { userName, userId, userState } = ctx.request.query
+  Number(userState);
   const { page, skipIndex } = util.pager(ctx.request.query)
   let params = {}
   if (userName) params.userName = userName
   if (userId) params.userId = userId
-  if (userState && userState != "0") params.userState = Number(userState)
+  if (userState && userState != 0) params.userState = userState
   try {
     let query = User.find(params,{_id:0,userPwd:0})
     let list = await query.skip(skipIndex).limit(page.pageSize)
