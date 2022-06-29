@@ -25,7 +25,7 @@ module.exports = {
 	},
 
 	//成功
-	succeed (data = {}, code = CODE.SUCCESS, msg = "成功") {
+	succeed (data = {}, msg = "成功", code = CODE.SUCCESS) {
 		return {
 			data,
 			code,
