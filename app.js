@@ -7,7 +7,8 @@ const bodyparser = require('koa-bodyparser')
 const logger =require("./utils/log4js")
 
 const index = require('./routes/index')
-const users = require('./routes/users')
+const user = require('./routes/user')
+const menu = require('./routes/menu')
 
 //连接mogodb数据库
 require("./mongoose/db")
@@ -40,7 +41,8 @@ app.use(async (ctx, next) => {
 
 // routes
 app.use(index.routes(), index.allowedMethods())
-app.use(users.routes(), users.allowedMethods())
+app.use(user.routes(), user.allowedMethods())
+app.use(menu.routes(), menu.allowedMethods())
 
 // error-handling
 app.on('error', (err, ctx) => {
