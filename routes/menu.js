@@ -9,19 +9,41 @@ router.get("/", async ctx => {
 	let params = {}
 	if (menuName) params.menuName = menuName
 	if (menuState) params.menuState = menuState
-
 	let res = await Menu.find(params)
-	recursion(res)
-	ctx.body = util.succeed(res)
+	
+	let resultList=menuTree(res,null,[])
+	console.log(resultList);
+	ctx.body = util.succeed(resultList)
 })
-let arr=[]
-function recursion(res){
-	res.forEach(element => {
-		if(element.parentId[0]==null){
-			arr.push(element)
-			console.log(arr);
+
+function menuTree(menuList,id,arr){
+	// menuList.forEach(item => {
+	// 	if(item.parentId[0] === null){
+	// 		console.log(item);
+	// 		arr.push(item)
+	// 	}
+	// });
+
+	for (let index = 0; index < menuList.length; index++) {
+		const item = menuList[index];
+		console.log(String(item.parentId.slice().shift()) == String(id))
+
+		// console.log(menuList.length);
+		// console.log(item)
+		if(String(item.parentId.slice().shift()) == String(id)){
+			// delete menuList[index]
+			// menuList
+			arr.push(item)
 		}
+	}
+
+	console.log(arr);
+	arr.forEach((item,index) => {
+		arr[index].children=[]
+		menuTree(menuList,item._id,arr[index].children)
 	});
+
+	return arr
 }
 
 router.post("/", async ctx => {
