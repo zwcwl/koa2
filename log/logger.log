@@ -1453,3 +1453,555 @@
 [2022-07-12T17:42:24.137] [INFO] logger - GET /menu?menuName=&menuState=1 - 32ms
 [2022-07-12T17:42:50.048] [INFO] logger - 数据库连接成功
 [2022-07-12T17:42:53.354] [INFO] logger - GET /menu?menuName=&menuState=1 - 35ms
+[2022-07-13T09:38:55.248] [INFO] logger - 数据库连接成功
+[2022-07-13T09:39:17.136] [INFO] logger - GET /menu?menuName=&menuState=1 - 31ms
+[2022-07-13T09:43:06.467] [INFO] logger - 数据库连接成功
+[2022-07-13T09:43:09.702] [INFO] logger - GET /menu?menuName=&menuState=1 - 30ms
+[2022-07-13T09:44:09.078] [INFO] logger - 数据库连接成功
+[2022-07-13T09:44:14.142] [INFO] logger - 数据库连接成功
+[2022-07-13T09:44:16.217] [ERROR] logger - server error ReferenceError: index is not defined
+    at C:\Users\nao-nao\Desktop\koa2\routes\menu.js:43:34
+    at Array.map (<anonymous>)
+    at menuTree (C:\Users\nao-nao\Desktop\koa2\routes\menu.js:41:6)
+    at C:\Users\nao-nao\Desktop\koa2\routes\menu.js:14:17
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async C:\Users\nao-nao\Desktop\koa2\app.js:37:3
+    at async serve (C:\Users\nao-nao\Desktop\koa2\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\nao-nao\Desktop\koa2\node_modules\koa-bodyparser\index.js:95:5) {
+  request: {
+    method: 'GET',
+    url: '/menu?menuName=&menuState=1',
+    header: {
+      'x-forwarded-host': 'localhost:8080',
+      'x-forwarded-proto': 'http',
+      'x-forwarded-port': '8080',
+      'x-forwarded-for': '127.0.0.1',
+      cookie: '_ga=GA1.1.118828747.1656725946; _gid=GA1.1.971905110.1657609055',
+      'accept-language': 'zh-CN,zh;q=0.9',
+      'accept-encoding': 'gzip, deflate, br',
+      referer: 'http://localhost:8080/system/menu',
+      'sec-fetch-dest': 'empty',
+      'sec-fetch-mode': 'cors',
+      'sec-fetch-site': 'same-origin',
+      'sec-ch-ua-platform': '"Windows"',
+      'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36',
+      'sec-ch-ua-mobile': '?0',
+      accept: 'application/json, text/plain, */*',
+      'sec-ch-ua': '".Not/A)Brand";v="99", "Google Chrome";v="103", "Chromium";v="103"',
+      connection: 'close',
+      host: 'localhost:3000'
+    }
+  },
+  response: {
+    status: 404,
+    message: 'Not Found',
+    header: [Object: null prototype] {}
+  },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/menu?menuName=&menuState=1',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>'
+}
+[2022-07-13T09:44:28.243] [INFO] logger - 数据库连接成功
+[2022-07-13T09:44:29.258] [INFO] logger - GET /menu?menuName=&menuState=1 - 31ms
+[2022-07-13T09:45:59.879] [INFO] logger - 数据库连接成功
+[2022-07-13T09:46:01.159] [INFO] logger - 数据库连接成功
+[2022-07-13T09:46:06.942] [INFO] logger - 数据库连接成功
+[2022-07-13T09:46:09.548] [INFO] logger - 数据库连接成功
+[2022-07-13T09:46:10.861] [INFO] logger - 数据库连接成功
+[2022-07-13T09:46:12.641] [ERROR] logger - server error TypeError: Cannot set properties of undefined (setting 'children')
+    at menuTree (C:\Users\nao-nao\Desktop\koa2\routes\menu.js:40:17)
+    at C:\Users\nao-nao\Desktop\koa2\routes\menu.js:44:3
+    at Array.map (<anonymous>)
+    at menuTree (C:\Users\nao-nao\Desktop\koa2\routes\menu.js:42:6)
+    at C:\Users\nao-nao\Desktop\koa2\routes\menu.js:44:3
+    at Array.map (<anonymous>)
+    at menuTree (C:\Users\nao-nao\Desktop\koa2\routes\menu.js:42:6)
+    at C:\Users\nao-nao\Desktop\koa2\routes\menu.js:14:17
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async C:\Users\nao-nao\Desktop\koa2\app.js:37:3
+    at async serve (C:\Users\nao-nao\Desktop\koa2\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\nao-nao\Desktop\koa2\node_modules\koa-bodyparser\index.js:95:5) {
+  request: {
+    method: 'GET',
+    url: '/menu?menuName=&menuState=1',
+    header: {
+      'x-forwarded-host': 'localhost:8080',
+      'x-forwarded-proto': 'http',
+      'x-forwarded-port': '8080',
+      'x-forwarded-for': '127.0.0.1',
+      cookie: '_ga=GA1.1.118828747.1656725946; _gid=GA1.1.971905110.1657609055',
+      'accept-language': 'zh-CN,zh;q=0.9',
+      'accept-encoding': 'gzip, deflate, br',
+      referer: 'http://localhost:8080/system/menu',
+      'sec-fetch-dest': 'empty',
+      'sec-fetch-mode': 'cors',
+      'sec-fetch-site': 'same-origin',
+      'sec-ch-ua-platform': '"Windows"',
+      'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36',
+      'sec-ch-ua-mobile': '?0',
+      accept: 'application/json, text/plain, */*',
+      'sec-ch-ua': '".Not/A)Brand";v="99", "Google Chrome";v="103", "Chromium";v="103"',
+      connection: 'close',
+      host: 'localhost:3000'
+    }
+  },
+  response: {
+    status: 404,
+    message: 'Not Found',
+    header: [Object: null prototype] {}
+  },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/menu?menuName=&menuState=1',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>'
+}
+[2022-07-13T09:47:01.350] [INFO] logger - 数据库连接成功
+[2022-07-13T09:47:03.890] [INFO] logger - 数据库连接成功
+[2022-07-13T09:47:05.615] [INFO] logger - GET /menu?menuName=&menuState=1 - 28ms
+[2022-07-13T09:48:17.675] [INFO] logger - 数据库连接成功
+[2022-07-13T09:48:18.919] [INFO] logger - 数据库连接成功
+[2022-07-13T09:48:21.992] [INFO] logger - 数据库连接成功
+[2022-07-13T09:48:23.774] [INFO] logger - 数据库连接成功
+[2022-07-13T09:48:27.269] [INFO] logger - 数据库连接成功
+[2022-07-13T09:48:36.356] [INFO] logger - GET /menu?menuName=&menuState=1 - 30ms
+[2022-07-13T09:48:57.845] [INFO] logger - 数据库连接成功
+[2022-07-13T09:49:00.228] [INFO] logger - 数据库连接成功
+[2022-07-13T09:49:02.046] [INFO] logger - 数据库连接成功
+[2022-07-13T09:49:04.042] [INFO] logger - 数据库连接成功
+[2022-07-13T09:49:05.455] [INFO] logger - GET /menu?menuName=&menuState=1 - 27ms
+[2022-07-13T09:49:35.110] [INFO] logger - 数据库连接成功
+[2022-07-13T09:49:36.793] [INFO] logger - 数据库连接成功
+[2022-07-13T09:49:38.904] [ERROR] logger - server error TypeError: Cannot set properties of undefined (setting 'children')
+    at menuTree (C:\Users\nao-nao\Desktop\koa2\routes\menu.js:43:29)
+    at C:\Users\nao-nao\Desktop\koa2\routes\menu.js:47:4
+    at Array.map (<anonymous>)
+    at menuTree (C:\Users\nao-nao\Desktop\koa2\routes\menu.js:45:7)
+    at C:\Users\nao-nao\Desktop\koa2\routes\menu.js:47:4
+    at Array.map (<anonymous>)
+    at menuTree (C:\Users\nao-nao\Desktop\koa2\routes\menu.js:45:7)
+    at C:\Users\nao-nao\Desktop\koa2\routes\menu.js:14:17
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async C:\Users\nao-nao\Desktop\koa2\app.js:37:3
+    at async serve (C:\Users\nao-nao\Desktop\koa2\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\nao-nao\Desktop\koa2\node_modules\koa-bodyparser\index.js:95:5) {
+  request: {
+    method: 'GET',
+    url: '/menu?menuName=&menuState=1',
+    header: {
+      'x-forwarded-host': 'localhost:8080',
+      'x-forwarded-proto': 'http',
+      'x-forwarded-port': '8080',
+      'x-forwarded-for': '127.0.0.1',
+      cookie: '_ga=GA1.1.118828747.1656725946; _gid=GA1.1.971905110.1657609055',
+      'accept-language': 'zh-CN,zh;q=0.9',
+      'accept-encoding': 'gzip, deflate, br',
+      referer: 'http://localhost:8080/system/menu',
+      'sec-fetch-dest': 'empty',
+      'sec-fetch-mode': 'cors',
+      'sec-fetch-site': 'same-origin',
+      'sec-ch-ua-platform': '"Windows"',
+      'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36',
+      'sec-ch-ua-mobile': '?0',
+      accept: 'application/json, text/plain, */*',
+      'sec-ch-ua': '".Not/A)Brand";v="99", "Google Chrome";v="103", "Chromium";v="103"',
+      connection: 'close',
+      host: 'localhost:3000'
+    }
+  },
+  response: {
+    status: 404,
+    message: 'Not Found',
+    header: [Object: null prototype] {}
+  },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/menu?menuName=&menuState=1',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>'
+}
+[2022-07-13T09:51:22.410] [INFO] logger - 数据库连接成功
+[2022-07-13T09:51:24.717] [INFO] logger - 数据库连接成功
+[2022-07-13T09:51:26.637] [INFO] logger - 数据库连接成功
+[2022-07-13T09:51:29.488] [INFO] logger - 数据库连接成功
+[2022-07-13T09:55:25.400] [INFO] logger - 数据库连接成功
+[2022-07-13T09:55:33.175] [INFO] logger - 数据库连接成功
+[2022-07-13T09:55:37.082] [INFO] logger - 数据库连接成功
+[2022-07-13T09:55:42.181] [ERROR] logger - server error TypeError: Cannot set properties of undefined (setting 'children')
+    at menuTree (C:\Users\nao-nao\Desktop\koa2\routes\menu.js:41:30)
+    at C:\Users\nao-nao\Desktop\koa2\routes\menu.js:44:10
+    at Array.map (<anonymous>)
+    at menuTree (C:\Users\nao-nao\Desktop\koa2\routes\menu.js:42:13)
+    at C:\Users\nao-nao\Desktop\koa2\routes\menu.js:44:10
+    at Array.map (<anonymous>)
+    at menuTree (C:\Users\nao-nao\Desktop\koa2\routes\menu.js:42:13)
+    at C:\Users\nao-nao\Desktop\koa2\routes\menu.js:14:19
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async C:\Users\nao-nao\Desktop\koa2\app.js:37:3
+    at async serve (C:\Users\nao-nao\Desktop\koa2\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\nao-nao\Desktop\koa2\node_modules\koa-bodyparser\index.js:95:5) {
+  request: {
+    method: 'GET',
+    url: '/menu?menuName=&menuState=1',
+    header: {
+      'x-forwarded-host': 'localhost:8080',
+      'x-forwarded-proto': 'http',
+      'x-forwarded-port': '8080',
+      'x-forwarded-for': '127.0.0.1',
+      cookie: '_ga=GA1.1.118828747.1656725946; _gid=GA1.1.971905110.1657609055',
+      'accept-language': 'zh-CN,zh;q=0.9',
+      'accept-encoding': 'gzip, deflate, br',
+      referer: 'http://localhost:8080/system/menu',
+      'sec-fetch-dest': 'empty',
+      'sec-fetch-mode': 'cors',
+      'sec-fetch-site': 'same-origin',
+      'sec-ch-ua-platform': '"Windows"',
+      'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36',
+      'sec-ch-ua-mobile': '?0',
+      accept: 'application/json, text/plain, */*',
+      'sec-ch-ua': '".Not/A)Brand";v="99", "Google Chrome";v="103", "Chromium";v="103"',
+      connection: 'close',
+      host: 'localhost:3000'
+    }
+  },
+  response: {
+    status: 404,
+    message: 'Not Found',
+    header: [Object: null prototype] {}
+  },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/menu?menuName=&menuState=1',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>'
+}
+[2022-07-13T09:55:54.965] [INFO] logger - 数据库连接成功
+[2022-07-13T09:55:57.137] [INFO] logger - GET /menu?menuName=&menuState=1 - 27ms
+[2022-07-13T09:56:16.730] [INFO] logger - 数据库连接成功
+[2022-07-13T09:56:17.928] [INFO] logger - 数据库连接成功
+[2022-07-13T09:56:24.686] [INFO] logger - 数据库连接成功
+[2022-07-13T09:59:06.505] [INFO] logger - 数据库连接成功
+[2022-07-13T10:01:35.753] [INFO] logger - 数据库连接成功
+[2022-07-13T10:01:42.505] [INFO] logger - 数据库连接成功
+[2022-07-13T10:01:46.598] [INFO] logger - GET /menu?menuName=&menuState=1 - 29ms
+[2022-07-13T10:01:57.242] [INFO] logger - 数据库连接成功
+[2022-07-13T10:01:57.826] [INFO] logger - GET /menu?menuName=&menuState=1 - 37ms
+[2022-07-13T10:01:58.720] [INFO] logger - GET /menu?menuName=&menuState=1 - 17ms
+[2022-07-13T10:01:59.469] [INFO] logger - GET /menu?menuName=&menuState=1 - 16ms
+[2022-07-13T10:02:05.009] [INFO] logger - 数据库连接成功
+[2022-07-13T10:02:05.404] [INFO] logger - GET /menu?menuName=&menuState=1 - 29ms
+[2022-07-13T10:02:12.802] [INFO] logger - 数据库连接成功
+[2022-07-13T10:02:19.671] [INFO] logger - 数据库连接成功
+[2022-07-13T10:02:22.945] [INFO] logger - 数据库连接成功
+[2022-07-13T10:02:25.478] [INFO] logger - 数据库连接成功
+[2022-07-13T10:02:27.160] [INFO] logger - 数据库连接成功
+[2022-07-13T10:02:30.730] [INFO] logger - 数据库连接成功
+[2022-07-13T10:02:31.856] [INFO] logger - GET /menu?menuName=&menuState=1 - 41ms
+[2022-07-13T10:03:36.674] [INFO] logger - 数据库连接成功
+[2022-07-13T10:03:38.706] [INFO] logger - 数据库连接成功
+[2022-07-13T10:03:40.162] [INFO] logger - 数据库连接成功
+[2022-07-13T10:03:42.964] [INFO] logger - GET /menu?menuName=&menuState=1 - 42ms
+[2022-07-13T10:05:32.380] [INFO] logger - POST /menu - 6ms
+[2022-07-13T10:05:34.793] [INFO] logger - GET /menu?menuName=&menuState=1 - 40ms
+[2022-07-13T10:06:51.946] [INFO] logger - 数据库连接成功
+[2022-07-13T10:06:54.549] [INFO] logger - 数据库连接成功
+[2022-07-13T10:08:47.333] [INFO] logger - PUT /menu - 19ms
+[2022-07-13T10:08:49.829] [INFO] logger - GET /menu?menuName=&menuState=1 - 16ms
+[2022-07-13T10:09:13.362] [INFO] logger - 数据库连接成功
+[2022-07-13T10:09:16.338] [INFO] logger - 数据库连接成功
+[2022-07-13T10:09:18.045] [INFO] logger - 数据库连接成功
+[2022-07-13T10:09:20.573] [INFO] logger - 数据库连接成功
+[2022-07-13T10:12:02.682] [INFO] logger - GET /menu?menuName=&menuState=1 - 20ms
+[2022-07-13T10:13:21.194] [INFO] logger - GET /menu?menuName=&menuState=1 - 11ms
+[2022-07-13T10:14:10.187] [ERROR] logger - server error TypeError: Cannot read properties of undefined (reading 'slice')
+    at menuTree (C:\Users\nao-nao\Desktop\koa2\routes\menu.js:22:36)
+    at C:\Users\nao-nao\Desktop\koa2\routes\menu.js:14:19
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async C:\Users\nao-nao\Desktop\koa2\app.js:37:3
+    at async serve (C:\Users\nao-nao\Desktop\koa2\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\nao-nao\Desktop\koa2\node_modules\koa-bodyparser\index.js:95:5) {
+  request: {
+    method: 'GET',
+    url: '/menu?menuName=&menuState=1',
+    header: {
+      'x-forwarded-host': 'localhost:8080',
+      'x-forwarded-proto': 'http',
+      'x-forwarded-port': '8080',
+      'x-forwarded-for': '127.0.0.1',
+      cookie: '_ga=GA1.1.118828747.1656725946; _gid=GA1.1.971905110.1657609055',
+      'accept-language': 'zh-CN,zh;q=0.9',
+      'accept-encoding': 'gzip, deflate, br',
+      referer: 'http://localhost:8080/system/menu',
+      'sec-fetch-dest': 'empty',
+      'sec-fetch-mode': 'cors',
+      'sec-fetch-site': 'same-origin',
+      'sec-ch-ua-platform': '"Windows"',
+      'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36',
+      'sec-ch-ua-mobile': '?0',
+      accept: 'application/json, text/plain, */*',
+      'sec-ch-ua': '".Not/A)Brand";v="99", "Google Chrome";v="103", "Chromium";v="103"',
+      connection: 'close',
+      host: 'localhost:3000'
+    }
+  },
+  response: {
+    status: 404,
+    message: 'Not Found',
+    header: [Object: null prototype] {}
+  },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/menu?menuName=&menuState=1',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>'
+}
+[2022-07-13T10:15:04.618] [INFO] logger - POST /menu - 5ms
+[2022-07-13T10:15:07.551] [INFO] logger - GET /menu?menuName=&menuState=1 - 5ms
+[2022-07-13T10:15:37.576] [INFO] logger - POST /menu - 1ms
+[2022-07-13T10:17:23.845] [INFO] logger - PUT /menu - 6ms
+[2022-07-13T10:17:26.340] [INFO] logger - GET /menu?menuName=&menuState=1 - 7ms
+[2022-07-13T10:18:25.628] [INFO] logger - PUT /menu - 3ms
+[2022-07-13T10:18:28.222] [INFO] logger - GET /menu?menuName=&menuState=1 - 7ms
+[2022-07-13T10:18:56.444] [INFO] logger - POST /menu - 1ms
+[2022-07-13T10:19:33.576] [INFO] logger - POST /menu - 1ms
+[2022-07-13T10:20:05.291] [INFO] logger - POST /menu - 1ms
+[2022-07-13T10:20:07.277] [INFO] logger - GET /menu?menuName=&menuState=1 - 13ms
+[2022-07-13T10:20:35.782] [INFO] logger - GET /menu - 17ms
+[2022-07-13T10:20:36.354] [INFO] logger - GET /menu - 13ms
+[2022-07-13T10:20:36.366] [INFO] logger - GET /menu?menuName=&menuState=1 - 23ms
+[2022-07-13T10:23:02.218] [INFO] logger - 数据库连接成功
+[2022-07-13T10:23:03.660] [INFO] logger - 数据库连接成功
+[2022-07-13T10:23:07.093] [INFO] logger - 数据库连接成功
+[2022-07-13T10:23:11.155] [INFO] logger - 数据库连接成功
+[2022-07-13T10:23:29.859] [INFO] logger - GET /menu - 39ms
+[2022-07-13T10:23:29.886] [INFO] logger - GET /menu?menuName=&menuState=1 - 59ms
+[2022-07-13T10:24:33.559] [INFO] logger - 数据库连接成功
+[2022-07-13T10:24:35.236] [INFO] logger - 数据库连接成功
+[2022-07-13T10:24:36.491] [INFO] logger - 数据库连接成功
+[2022-07-13T10:24:39.656] [INFO] logger - 数据库连接成功
+[2022-07-13T10:24:49.580] [INFO] logger - 数据库连接成功
+[2022-07-13T10:24:53.289] [INFO] logger - 数据库连接成功
+[2022-07-13T10:24:55.689] [INFO] logger - 数据库连接成功
+[2022-07-13T10:24:57.179] [ERROR] logger - server error TypeError: arr.foreach is not a function
+    at menuTree (C:\Users\nao-nao\Desktop\koa2\routes\menu.js:28:6)
+    at C:\Users\nao-nao\Desktop\koa2\routes\menu.js:14:19
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async C:\Users\nao-nao\Desktop\koa2\app.js:37:3
+    at async serve (C:\Users\nao-nao\Desktop\koa2\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\nao-nao\Desktop\koa2\node_modules\koa-bodyparser\index.js:95:5) {
+  request: {
+    method: 'GET',
+    url: '/menu',
+    header: {
+      'x-forwarded-host': 'localhost:8080',
+      'x-forwarded-proto': 'http',
+      'x-forwarded-port': '8080',
+      'x-forwarded-for': '127.0.0.1',
+      cookie: '_ga=GA1.1.118828747.1656725946; _gid=GA1.1.971905110.1657609055',
+      'accept-language': 'zh-CN,zh;q=0.9',
+      'accept-encoding': 'gzip, deflate, br',
+      referer: 'http://localhost:8080/system/menu',
+      'sec-fetch-dest': 'empty',
+      'sec-fetch-mode': 'cors',
+      'sec-fetch-site': 'same-origin',
+      'sec-ch-ua-platform': '"Windows"',
+      'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36',
+      'sec-ch-ua-mobile': '?0',
+      accept: 'application/json, text/plain, */*',
+      'sec-ch-ua': '".Not/A)Brand";v="99", "Google Chrome";v="103", "Chromium";v="103"',
+      connection: 'close',
+      host: 'localhost:3000'
+    }
+  },
+  response: {
+    status: 404,
+    message: 'Not Found',
+    header: [Object: null prototype] {}
+  },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/menu',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>'
+}
+[2022-07-13T10:24:57.196] [ERROR] logger - server error TypeError: arr.foreach is not a function
+    at menuTree (C:\Users\nao-nao\Desktop\koa2\routes\menu.js:28:6)
+    at C:\Users\nao-nao\Desktop\koa2\routes\menu.js:14:19
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async C:\Users\nao-nao\Desktop\koa2\app.js:37:3
+    at async serve (C:\Users\nao-nao\Desktop\koa2\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\nao-nao\Desktop\koa2\node_modules\koa-bodyparser\index.js:95:5) {
+  request: {
+    method: 'GET',
+    url: '/menu?menuName=&menuState=1',
+    header: {
+      'x-forwarded-host': 'localhost:8080',
+      'x-forwarded-proto': 'http',
+      'x-forwarded-port': '8080',
+      'x-forwarded-for': '127.0.0.1',
+      cookie: '_ga=GA1.1.118828747.1656725946; _gid=GA1.1.971905110.1657609055',
+      'accept-language': 'zh-CN,zh;q=0.9',
+      'accept-encoding': 'gzip, deflate, br',
+      referer: 'http://localhost:8080/system/menu',
+      'sec-fetch-dest': 'empty',
+      'sec-fetch-mode': 'cors',
+      'sec-fetch-site': 'same-origin',
+      'sec-ch-ua-platform': '"Windows"',
+      'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36',
+      'sec-ch-ua-mobile': '?0',
+      accept: 'application/json, text/plain, */*',
+      'sec-ch-ua': '".Not/A)Brand";v="99", "Google Chrome";v="103", "Chromium";v="103"',
+      connection: 'close',
+      host: 'localhost:3000'
+    }
+  },
+  response: {
+    status: 404,
+    message: 'Not Found',
+    header: [Object: null prototype] {}
+  },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/menu?menuName=&menuState=1',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>'
+}
+[2022-07-13T10:25:02.976] [INFO] logger - 数据库连接成功
+[2022-07-13T10:25:05.590] [INFO] logger - 数据库连接成功
+[2022-07-13T10:25:05.650] [INFO] logger - GET /menu - 39ms
+[2022-07-13T10:25:05.676] [INFO] logger - GET /menu?menuName=&menuState=1 - 58ms
+[2022-07-13T10:26:08.312] [INFO] logger - 数据库连接成功
+[2022-07-13T10:26:16.054] [INFO] logger - 数据库连接成功
+[2022-07-13T10:26:25.999] [INFO] logger - 数据库连接成功
+[2022-07-13T10:26:27.579] [INFO] logger - 数据库连接成功
+[2022-07-13T10:26:27.803] [INFO] logger - GET /menu - 50ms
+[2022-07-13T10:26:27.837] [INFO] logger - GET /menu?menuName=&menuState=1 - 77ms
+[2022-07-13T10:26:59.171] [INFO] logger - 数据库连接成功
+[2022-07-13T10:27:01.330] [INFO] logger - 数据库连接成功
+[2022-07-13T10:30:28.213] [INFO] logger - GET /menu - 27ms
+[2022-07-13T10:30:28.230] [INFO] logger - GET /menu?menuName=&menuState=1 - 37ms
+[2022-07-13T10:32:30.693] [INFO] logger - POST /menu - 4ms
+[2022-07-13T10:32:30.773] [INFO] logger - POST /menu - 1ms
+[2022-07-13T10:32:36.086] [INFO] logger - GET /menu - 24ms
+[2022-07-13T10:32:36.113] [INFO] logger - GET /menu?menuName=&menuState=1 - 24ms
+[2022-07-13T10:33:02.786] [INFO] logger - DELETE /menu - 6ms
+[2022-07-13T10:33:02.812] [INFO] logger - GET /menu?menuName=&menuState=1 - 16ms
+[2022-07-13T10:33:04.964] [INFO] logger - GET /menu - 17ms
+[2022-07-13T10:33:04.982] [INFO] logger - GET /menu?menuName=&menuState=1 - 34ms
+[2022-07-13T10:33:11.238] [INFO] logger - POST /menu - 0ms
+[2022-07-13T10:33:14.265] [INFO] logger - GET /menu - 21ms
+[2022-07-13T10:33:14.432] [INFO] logger - GET /menu?menuName=&menuState=1 - 27ms
+[2022-07-13T10:33:19.455] [INFO] logger - DELETE /menu - 3ms
+[2022-07-13T10:33:19.479] [INFO] logger - GET /menu?menuName=&menuState=1 - 15ms
+[2022-07-13T10:33:22.387] [INFO] logger - GET /menu - 17ms
+[2022-07-13T10:33:22.404] [INFO] logger - GET /menu?menuName=&menuState=1 - 33ms
+[2022-07-13T10:33:37.104] [INFO] logger - POST /menu - 0ms
+[2022-07-13T10:33:41.410] [INFO] logger - GET /menu - 23ms
+[2022-07-13T10:33:41.431] [INFO] logger - GET /menu?menuName=&menuState=1 - 43ms
+[2022-07-13T10:33:58.734] [INFO] logger - DELETE /menu - 10ms
+[2022-07-13T10:33:59.007] [INFO] logger - GET /menu?menuName=&menuState=1 - 28ms
+[2022-07-13T10:34:32.362] [INFO] logger - PUT /menu - 5ms
+[2022-07-13T10:34:34.788] [INFO] logger - GET /menu - 17ms
+[2022-07-13T10:34:34.804] [INFO] logger - GET /menu?menuName=&menuState=1 - 32ms
+[2022-07-13T10:34:43.595] [INFO] logger - GET /menu - 16ms
+[2022-07-13T10:34:43.615] [INFO] logger - GET /menu?menuName=&menuState=1 - 19ms
+[2022-07-13T10:57:22.284] [INFO] logger - GET /users?pageNum=1&pageSize=10&total=1&userName=&userId=&userState=1 - 5ms
+[2022-07-13T10:59:39.780] [INFO] logger - GET /menu - 21ms
+[2022-07-13T10:59:39.799] [INFO] logger - GET /menu?menuName=&menuState=1 - 39ms
+[2022-07-13T11:00:06.513] [INFO] logger - GET /menu - 18ms
+[2022-07-13T11:11:08.518] [INFO] logger - POST /menu - 1ms
+[2022-07-13T11:11:11.869] [INFO] logger - GET /menu - 26ms
+[2022-07-13T11:11:11.895] [INFO] logger - GET /menu?menuName=&menuState=1 - 25ms
+[2022-07-13T11:11:18.576] [INFO] logger - GET /users?pageNum=1&pageSize=10&total=1&userName=&userId=&userState=1 - 3ms
+[2022-07-13T11:12:04.448] [INFO] logger - 数据库连接成功
+[2022-07-13T11:12:06.955] [INFO] logger - 数据库连接成功
+[2022-07-13T11:12:13.322] [INFO] logger - 数据库连接成功
+[2022-07-13T11:12:14.771] [INFO] logger - 数据库连接成功
+[2022-07-13T11:12:17.077] [INFO] logger - 数据库连接成功
+[2022-07-13T11:12:18.722] [INFO] logger - 数据库连接成功
+[2022-07-13T11:12:20.288] [INFO] logger - 数据库连接成功
+[2022-07-13T11:12:22.022] [INFO] logger - 数据库连接成功
+[2022-07-13T11:12:39.145] [INFO] logger - 数据库连接成功
+[2022-07-13T11:12:42.020] [INFO] logger - 数据库连接成功
+[2022-07-13T11:12:46.088] [INFO] logger - 数据库连接成功
+[2022-07-13T11:12:47.114] [INFO] logger - 数据库连接成功
+[2022-07-13T11:12:49.543] [INFO] logger - 数据库连接成功
+[2022-07-13T11:12:58.818] [INFO] logger - 数据库连接成功
+[2022-07-13T11:13:00.994] [INFO] logger - 数据库连接成功
+[2022-07-13T11:13:03.908] [INFO] logger - 数据库连接成功
+[2022-07-13T11:13:09.472] [INFO] logger - 数据库连接成功
+[2022-07-13T11:13:32.903] [INFO] logger - 数据库连接成功
+[2022-07-13T11:13:36.752] [INFO] logger - 数据库连接成功
+[2022-07-13T11:13:40.332] [INFO] logger - 数据库连接成功
+[2022-07-13T11:13:45.963] [INFO] logger - 数据库连接成功
+[2022-07-13T11:13:48.841] [ERROR] logger - server error ReferenceError: iarr is not defined
+    at C:\Users\nao-nao\Desktop\koa2\routes\menu.js:29:32
+    at Array.map (<anonymous>)
+    at menuTree (C:\Users\nao-nao\Desktop\koa2\routes\menu.js:27:6)
+    at C:\Users\nao-nao\Desktop\koa2\routes\menu.js:14:19
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async C:\Users\nao-nao\Desktop\koa2\app.js:37:3
+    at async serve (C:\Users\nao-nao\Desktop\koa2\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (C:\Users\nao-nao\Desktop\koa2\node_modules\koa-bodyparser\index.js:95:5) {
+  request: {
+    method: 'GET',
+    url: '/menu',
+    header: {
+      'x-forwarded-host': 'localhost:8080',
+      'x-forwarded-proto': 'http',
+      'x-forwarded-port': '8080',
+      'x-forwarded-for': '127.0.0.1',
+      cookie: '_ga=GA1.1.118828747.1656725946; _gid=GA1.1.971905110.1657609055',
+      'accept-language': 'zh-CN,zh;q=0.9',
+      'accept-encoding': 'gzip, deflate, br',
+      referer: 'http://localhost:8080/system/user',
+      'sec-fetch-dest': 'empty',
+      'sec-fetch-mode': 'cors',
+      'sec-fetch-site': 'same-origin',
+      'sec-ch-ua-platform': '"Windows"',
+      'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36',
+      'sec-ch-ua-mobile': '?0',
+      accept: 'application/json, text/plain, */*',
+      'sec-ch-ua': '".Not/A)Brand";v="99", "Google Chrome";v="103", "Chromium";v="103"',
+      'cache-control': 'no-cache',
+      pragma: 'no-cache',
+      connection: 'close',
+      host: 'localhost:3000'
+    }
+  },
+  response: {
+    status: 404,
+    message: 'Not Found',
+    header: [Object: null prototype] {}
+  },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/menu',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>'
+}
+[2022-07-13T11:13:48.858] [INFO] logger - GET /users?pageNum=1&pageSize=10&total=1&userName=&userId=&userState=1 - 34ms
+[2022-07-13T11:13:55.261] [INFO] logger - 数据库连接成功
+[2022-07-13T11:13:58.135] [INFO] logger - GET /menu - 52ms
+[2022-07-13T11:13:58.147] [INFO] logger - GET /users?pageNum=1&pageSize=10&total=1&userName=&userId=&userState=1 - 54ms
+[2022-07-13T11:14:09.301] [INFO] logger - 数据库连接成功
+[2022-07-13T11:14:10.924] [INFO] logger - 数据库连接成功
+[2022-07-13T11:17:26.109] [INFO] logger - GET /menu?menuName=&menuState=1 - 39ms
+[2022-07-13T11:19:00.933] [INFO] logger - POST /menu - 5ms
+[2022-07-13T11:19:03.900] [INFO] logger - GET /menu - 32ms
+[2022-07-13T11:19:03.931] [INFO] logger - GET /menu?menuName=&menuState=1 - 29ms
+[2022-07-13T11:19:05.619] [INFO] logger - GET /users?pageNum=1&pageSize=10&total=1&userName=&userId=&userState=1 - 5ms
+[2022-07-13T11:19:25.316] [INFO] logger - 数据库连接成功
+[2022-07-13T11:19:29.434] [INFO] logger - GET /menu - 45ms
+[2022-07-13T11:19:29.470] [INFO] logger - GET /menu?menuName=&menuState=1 - 75ms
+[2022-07-13T11:35:54.579] [INFO] logger - 数据库连接成功
+[2022-07-13T11:35:55.580] [INFO] logger - 数据库连接成功
+[2022-07-13T11:35:57.954] [INFO] logger - 数据库连接成功
+[2022-07-13T11:35:59.454] [INFO] logger - 数据库连接成功
+[2022-07-13T11:36:01.687] [INFO] logger - 数据库连接成功
+[2022-07-13T11:36:03.620] [INFO] logger - 数据库连接成功
+[2022-07-13T16:19:46.733] [INFO] logger - 数据库连接成功
+[2022-07-13T16:20:06.095] [INFO] logger - GET /menu - 52ms
+[2022-07-13T16:20:06.134] [INFO] logger - GET /menu?menuName=&menuState=1 - 84ms

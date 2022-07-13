@@ -10,39 +10,24 @@ router.get("/", async ctx => {
 	if (menuName) params.menuName = menuName
 	if (menuState) params.menuState = menuState
 	let res = await Menu.find(params)
-	
-	let resultList=menuTree(res,null,[])
+
+	let resultList = menuTree(res, null, [])
 	console.log(resultList);
 	ctx.body = util.succeed(resultList)
 })
 
-function menuTree(menuList,id,arr){
-	// menuList.forEach(item => {
-	// 	if(item.parentId[0] === null){
-	// 		console.log(item);
-	// 		arr.push(item)
-	// 	}
-	// });
-
-	for (let index = 0; index < menuList.length; index++) {
+function menuTree (menuList, id, arr) {
+	for (let index = 0; index < menuList.length; index++) {  					  
 		const item = menuList[index];
-		console.log(String(item.parentId.slice().shift()) == String(id))
-
-		// console.log(menuList.length);
-		// console.log(item)
-		if(String(item.parentId.slice().shift()) == String(id)){
-			// delete menuList[index]
-			// menuList
-			arr.push(item)
+		console.log(String(item.parentId.slice().shift()) , String(id))  
+		if (String(item.parentId.slice().pop()) == String(id)) {
+			arr.push(item._doc)
 		}
 	}
-
-	console.log(arr);
-	arr.forEach((item,index) => {
-		arr[index].children=[]
-		menuTree(menuList,item._id,arr[index].children)
+	arr.map((item) => {																								
+		item.children = []
+		menuTree(menuList, item._id, item.children)
 	});
-
 	return arr
 }
 
