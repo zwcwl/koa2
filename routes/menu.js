@@ -12,14 +12,12 @@ router.get("/", async ctx => {
 	let res = await Menu.find(params)
 
 	let resultList = menuTree(res, null, [])
-	console.log(resultList);
 	ctx.body = util.succeed(resultList)
 })
 
 function menuTree (menuList, id, arr) {
 	for (let index = 0; index < menuList.length; index++) {  					  
 		const item = menuList[index];
-		console.log(String(item.parentId.slice().shift()) , String(id))  
 		if (String(item.parentId.slice().pop()) == String(id)) {
 			arr.push(item._doc)
 		}

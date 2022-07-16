@@ -19,7 +19,7 @@ log4js.configure({
 	},
 	categories: {
 		default: { appenders: ["console"], level: "off" },
-		logger: { appenders: ["console","logger"], level: "debug" }
+		logger: { appenders: ["console"], level: "debug" }
 	}
 });
 
