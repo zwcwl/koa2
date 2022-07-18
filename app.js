@@ -9,6 +9,7 @@ const logger =require("./utils/log4js")
 const index = require('./routes/index')
 const user = require('./routes/user')
 const menu = require('./routes/menu')
+const role = require('./routes/role')
 
 //连接mogodb数据库
 require("./mongoose/db")
@@ -43,6 +44,7 @@ app.use(async (ctx, next) => {
 app.use(index.routes(), index.allowedMethods())
 app.use(user.routes(), user.allowedMethods())
 app.use(menu.routes(), menu.allowedMethods())
+app.use(role.routes(), role.allowedMethods())
 
 // error-handling
 app.on('error', (err, ctx) => {
