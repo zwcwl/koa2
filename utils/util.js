@@ -35,7 +35,6 @@ module.exports = {
 
 	//失败
 	fail ( msg = "失败",code = CODE.BUSINESS_ERROR,data = "") {
-		logger.debug(msg)
 		return {
 			msg,
 			code,

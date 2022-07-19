@@ -14,9 +14,9 @@ const role = require('./routes/role')
 //连接mogodb数据库
 require("./mongoose/db")
 
-//验证token
-// const checkToken=require("./utils/checkToken")
-// app.use(checkToken)
+// 验证token
+const verifyToken=require("./utils/verifyToken")
+app.use(verifyToken)
 
 // error handler
 onerror(app)

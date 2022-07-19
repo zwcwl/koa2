@@ -12,15 +12,14 @@ router.post('/login', async (ctx, next) => {
   let { userName, userPwd } = ctx.request.body
   try {
     //查询数据库用户密码是否正确
-    let result = await User.findOne({ userName, userPwd })
+    let result = await User.findOne({ userName, userPwd },"_id userName userEmail userId mobile")
     if (result) {
-      const token = jwt.sign({ data: result }, "test", { expiresIn: "1day" })
-      result.token = token
-      ctx.body = util.succeed(result)
+      const token = jwt.sign({ data: result }, "test", { expiresIn: '1h' })
+      let res={...result._doc,token}
+      ctx.body = util.succeed(res)
     } else {
       ctx.body = util.fail("账号或密码错误", 20001)
     }
-
   } catch (error) {
     ctx.body = util.fail(error)
   }
