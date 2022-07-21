@@ -34,6 +34,7 @@ router.get("/", async (ctx) => {
   if (userName) params.userName = userName
   if (userId) params.userId = userId
   if (userState && userState != 0) params.userState = userState
+  console.log(ctx.request.query);
   try {
     let query = User.find(params, { _id: 0, userPwd: 0 })
     let list = await query.skip(skipIndex).limit(page.pageSize)
