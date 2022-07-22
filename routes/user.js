@@ -30,11 +30,12 @@ router.get("/", async (ctx) => {
   const { userName, userId, userState } = ctx.request.query
   Number(userState);
   const { page, skipIndex } = util.pager(ctx.request.query)
+
   let params = {}
   if (userName) params.userName = userName
   if (userId) params.userId = userId
   if (userState && userState != 0) params.userState = userState
-  console.log(ctx.request.query);
+
   try {
     let query = User.find(params, { _id: 0, userPwd: 0 })
     let list = await query.skip(skipIndex).limit(page.pageSize)
@@ -73,6 +74,7 @@ router.put("/", async (ctx) => {
 //用户新增
 router.post("/", async (ctx) => {
   let data = ctx.request.body
+  console.log(data);
   try {
     let isExist = await User.findOne({ $or: [{ userName: data.userName }, { userEmail: data.userEmail }] }, "_id userEmail userName")
     if (isExist) {
