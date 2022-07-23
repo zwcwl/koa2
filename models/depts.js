@@ -7,6 +7,7 @@ const deptSchema = mongoose.Schema({
         type: Date,
         default: Date.now()
     },
+    userName:String,
     userEmail:String,
     parentId:[mongoose.Types.ObjectId],
     updateTime: {
