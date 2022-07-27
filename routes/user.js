@@ -12,7 +12,7 @@ router.post('/login', async (ctx, next) => {
   let { userName, userPwd } = ctx.request.body
   try {
     //查询数据库用户密码是否正确
-    let result = await User.findOne({ userName, userPwd },"_id userName userEmail userId mobile")
+    let result = await User.findOne({ userName, userPwd },{userPwd:0})
     if (result) {
       const token = jwt.sign({ data: result }, "test", { expiresIn: '1h' })
       let res={...result._doc,token}
