@@ -10,19 +10,19 @@ router.get("/", async ctx => {
 	if (menuName) params.menuName = menuName
 	if (menuState) params.menuState = menuState
 	let res = await Menu.find(params)
-
-	let resultList = menuTree(res, null, [])
+	let obj=JSON.parse(JSON.stringify(res))
+	let resultList = menuTree(obj, null, [])
 	ctx.body = util.succeed(resultList)
 })
 
 function menuTree (menuList, id, arr) {
-	for (let index = 0; index < menuList.length; index++) {  					  
+	for (let index = 0; index < menuList.length; index++) {
 		const item = menuList[index];
-		if (String(item.parentId.slice().pop()) == String(id)) {
-			arr.push(item._doc)
+		if (item.parentId.slice().pop() == id) {
+			arr.push(item)
 		}
 	}
-	arr.map((item) => {																								
+	arr.map((item) => {
 		item.children = []
 		menuTree(menuList, item._id, item.children)
 	});
